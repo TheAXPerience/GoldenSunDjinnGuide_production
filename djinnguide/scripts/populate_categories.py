@@ -3,7 +3,7 @@ import csv
 
 def run():
     try:
-        with open('djinnlist/catlist.csv') as file:
+        with open('djinnguide/djinnlist/catlist.csv') as file:
             reader = csv.reader(file)
             reader.__next__() # header row
 

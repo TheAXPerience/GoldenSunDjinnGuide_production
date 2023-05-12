@@ -1,1 +1,1 @@
-web: python djinnguide/manage.py makemigrations && python djinnguide/manage.py migrate && python djinnguide/manage.py runscripts populate_db && python djinnguide/manage.py runscripts populate_categories && gunicorn --bind 0.0.0.0:8000 djinnguide.wsgi
+web: python djinnguide/manage.py makemigrations && python djinnguide/manage.py migrate && python djinnguide/manage.py runscript populate_db && python djinnguide/manage.py runscript populate_categories && gunicorn --bind 0.0.0.0:8000 djinnguide.wsgi
